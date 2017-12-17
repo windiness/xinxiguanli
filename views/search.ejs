@@ -1,0 +1,35 @@
+<% include header %>
+<div class="main">
+    <table class="table table-bordered table-hover">
+        <tbody>
+        <tr>
+            <th>用户名</th>
+            <th>姓名
+            </th>
+            <th>性别</th>
+            <th>年龄</th>
+            <th>手机</th>
+            <th>邮箱</th>
+
+            <th>注册时间</th>
+            <th>操作</th>
+        </tr>
+
+        <% docs.forEach(function (doc) {  %>
+        <tr>
+            <td><%= doc.username%></td>
+            <td><%= doc.name%></td>
+            <td><%= doc.sex%></td>
+            <td><%= doc.age%></td>
+            <td><%= doc.tel%></td>
+            <td><%= doc.email%></td>
+            <td><%= doc.time%></td>
+            <td><span><a href="/delet/<%= doc.time%>">删除</a></span>
+                <span><a href="/edit/<%= doc.time%>">修改</a></span>
+            </td>
+        </tr>
+        </tbody>
+        <% }) %>
+
+    </table>
+<% include footer %>

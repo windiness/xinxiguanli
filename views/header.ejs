@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="/javascripts/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1 style="color: #8c8c8c">信息管理</h1>
+        <form id="searchbox" action="/search" method="get">
+            <input type="text" name="keyword"  placeholder="搜索项目">
+        </form>
+        <div id="contal">
+            <a href="/add"><button class="btn btn-success btn-lg">添加</button></a>
+            <a><button class="btn btn-danger btn-lg">删除</button></a>
+        </div>
+        <div class="clear"></div>
+    </header>

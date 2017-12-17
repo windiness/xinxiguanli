@@ -1,0 +1,52 @@
+<% include header %>
+<div class="container">
+<form method="post"  action="/edit/<%= doc.time %>" class="form-horizontal">
+    <!--//-->
+    <div class="form-group ">
+        <label class="control-label col-sm-2">用户名:</label>
+        <div class="col-sm-4">
+            <input class="form-control" type="text" name="username" value="<%= doc.username%>">
+        </div>
+    </div>
+    <!--/-->
+    <div class="form-group ">
+        <label class="control-label col-sm-2" for="name">姓名:</label>
+        <div class="col-sm-4">
+            <input class="form-control" id="name" type="text" name="name" value="<%= doc.name%>">
+        </div>
+    </div>
+    <!---->
+    <div class="form-group ">
+        <label class="control-label col-sm-2">性别:</label>
+        <div class="col-sm-4">
+            <input class="form-control" type="text" name="sex" value="<%= doc.sex%>">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label class="control-label col-sm-2">年龄:</label>
+        <div class="col-sm-4">
+            <input class="form-control" type="text" name="age" value="<%= doc.age%>">
+        </div>
+    </div>
+    <div class="form-group ">
+        <label class="control-label col-sm-2">手机:</label>
+        <div class="col-sm-4">
+            <input class="form-control" type="text" name="tel" value="<%= doc.tel%>">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-2">邮箱:</label>
+        <div class="col-sm-4">
+            <input class="form-control" type="email" name="email" value="<%= doc.email%>">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-4">
+            <input class="btn btn-success pull-right" type="submit" value="提交">
+        </div>
+    </div>
+
+</form>
+</div>
+
+<% include footer %>
